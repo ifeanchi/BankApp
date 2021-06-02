@@ -12,16 +12,23 @@ public class BankAccount {
         this.checkingBalance+= checkingOpeningDeposit;
         this.savingsBalance+= savingsOpeningDeposit;
     }
+    public void checkingWithdrawal(double checkingWithdrawal){
+        this.checkingBalance-= checkingWithdrawal;
+    }
+
+    public void savingsWithdrawal(double savingsWithdrawal){
+        this.savingsBalance-= savingsWithdrawal;
+    }
     public double getCheckingBalance(){
         return checkingBalance;
 
     }
     public double getSavingsBalance(){
         return savingsBalance;
-
     }
+
     public void printBal(){
-        System.out.println()
+        System.out.println();
     }
 }
 
